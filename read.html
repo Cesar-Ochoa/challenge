@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Read</title>
+  <style>
+* {
+    box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+    height: auto;
+}
+	
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+		height: auto;
+    }
+}
+
+#row2 {
+    position: relative;
+    top: 10px;
+    column-count: 3;
+    column-gap: 10px;
+  }
+  #col1, #col2, #col3 {
+    width: 100px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    
+  #row2 {
+    display: none;
+  }
+  img {
+	width: 100%;
+    height: auto;
+}
+   
+}
+
+h2 {
+	color: #FF4500;
+}
+</style>
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+<h2>Southwestern Vacations</h2>
+<h3>Arizona Package</h3>
+
+<div class="row">
+  <div class="column" >
+    <aside>
+		<img src="arizona-2116045_960_720.jpg" />
+	</aside>
+  </div>
+  <div class="column" >
+    <article><h4>Phoenix</h4>
+		<p>This book is a treatise on the theory of ethics, very popular during the renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. This book is a treatise on the theory of ethics, very popular during the }renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. This book is a treatise on the theory of ethics, very popular during the }renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </p>
+		<h4>Sedona</h4>
+		<article>
+		  <ul>
+			  <li>Discovered the undoubtabl source.</li>
+			  <li>Lorem Ipsum comes from sections 1.10.32 and 1.10.33</li>
+			  <li>Discovered the undoubtabl source.</li>
+		  </ul>
+		</article>
+	</article>
+  </div>
+</div>
+
+</body>
+
+
+
+</body>
+</html>
+
